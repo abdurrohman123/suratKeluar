@@ -16,6 +16,8 @@
     <title>Thema Admin Boostrap Template</title>
 
     <!-- Start Global plugin css -->
+    <link href="/template/assets/css/theme.css" rel="stylesheet">
+
     <link href="/template/assets/css/global-plugins.css" rel="stylesheet">
     <link href="/template/assets/vendors/jquery-icheck/skins/all.css" rel="stylesheet" />
     <!-- <link href="/template/assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -37,9 +39,9 @@
     <!-- <link href="/template/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet" /> -->
     <!-- End Global plugin css -->
 
-
+    <link href="template/assets/css/table-responsive.css" rel="stylesheet"/>
+    <link href="template/assets/vendors/datatable/bootstrap/dataTables.bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="/template/assets/css/theme.css" rel="stylesheet">
     <link href="/template/assets/css/style-responsive.css" rel="stylesheet" />
     <link href="/template/assets/css/class-helpers.css" rel="stylesheet" />
 
@@ -236,8 +238,12 @@
                                 </p>
                             </div>
                         </li>
-                        <li class='../index.html'><a href="#" class="hvr-bounce-to-right-sidebar-parent"><span
+                        <li><a href="{{ route('dashboard.index') }}" class="hvr-bounce-to-right-sidebar-parent"><span
                                     class='icon-sidebar icon-home fa-2x'></span><span>Dashboard</span></a></li>
+                         <li><a href="{{ route('surat_balasan.index') }}" class="hvr-bounce-to-right-sidebar-parent"><span
+                                    class='icon-sidebar pe-7s-mail fa-2x'></span><span>Surat Balasan</span></a></li>
+                         <li><a href="{{ route('history.index') }}" class="hvr-bounce-to-right-sidebar-parent"><span
+                                     class="icon-sidebar pe-7s-display2 fa-2x"></span><span>History</span></a></li>
                     </ul>
                 </div>  
             </div>
@@ -249,12 +255,13 @@
                     </div>
 
                     @yield('abdurrohman_content')
-                    
+
                 </div>
             </section>
         </section>
     </section>
-    <script src="/template/assets/js/global-plugins.js"></script>
+    <script src="template/assets/js/tables.js"></script>
+    <script src="template/assets/js/table_editable.js"></script>
     <!-- <script src="/template/assets/js/jquery.js"></script>
 <script src="/template/assets/js/jquery-migrate-1.2.1.min.js"></script>
 <script src="/template/assets/vendors/jquery.cookie/jquery.cookie.js"></script>
@@ -310,17 +317,19 @@
 <script src="/template/assets/vendors/pogo-slider/js/jquery.pogo-slider.min.js" type="text/javascript" ></script>
 <script src="/template/assets/vendors/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript" ></script>
 <script src="/template/vendors/nestable/jquery.nestable.js" type="text/javascript" ></script>
-<script src="/template/assets/vendors/bstooltip/bstooltip.js"></script> -->
+<script src="/template/assets/vendors/bstooltip/bstooltip.js"></script>
 
-    <!--##################################################################################
+ 
 #
 # COMMON SCRIPT FOR THIS PAGE
 #
 ##################################################################################-->
 
     <!--common script init for all pages-->
-    <script src="/template/assets/js/theme.js" type="text/javascript"></script>
+   
 
+    <script src="/template/assets/js/global-plugins.js"></script>
+    <script src="/template/assets/js/theme.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             new WOW().init();
