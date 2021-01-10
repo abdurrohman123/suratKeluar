@@ -2,34 +2,73 @@
 @section('abdurrohman_content')
 
 <div class="row">
-    <div class="container col-md-6">
-        <form>
+    <form>
+        <div class="container col-md-3">
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <label for="exampleInputEmail1">Tanggal Masuk</label>
+                <input type="date" class="form-control" id="exampleInputEmail1">
             </div>
+        </div>
+        <div class="container col-md-3">
             <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <label for="">Tanggal Penyelesaian</label>
+                <input type="date" class="form-control" id="">
             </div>
-        </form>
-    </div>
-    <div class="container col-md-6">
-        <form>
+        </div>
+        <div class="container col-md-6">
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <label for="">Nomor Surat</label>
+                <input type="text" class="form-control" id="">
             </div>
+        </div>
+        <div class="container col-md-3">
             <div class="form-group">
-                <label for="textarea-expandable">Textarea Expandable</label>
-                <textarea class="form-control textarea-expandable" style="height: 3em;"></textarea>
+                <label for="">Register Surat</label>
+                <input type="text" class="form-control" id="">
             </div>
-        </form>
-    </div>
+        </div>
+        <div class="container col-md-3">
+            <div class="form-group">
+                <label for="">Tanggal Surat</label>
+                <input type="date" class="form-control" id="">
+            </div>
+        </div>
+        <div class="container col-md-6">
+            <div class="form-group">
+                <label for="">Asal Surat</label>
+                <input type="text" class="form-control" id="">
+            </div>
+        </div>
+        <div class="container col-md-6">
+            <div class="form-group">
+                <label for="comment">Prihal</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+        </div>
+        <div class="container col-md-3">
+            <div class="form-group">
+                <label for="">Disposisi</label>
+                <input type="text" class="form-control" id="">
+            </div>
+        </div>
+        <div class="container col-md-3">
+            <div class="form-group">
+                <label for="">Keterangan</label>
+                <input type="text" class="form-control" id="">
+            </div>
+        </div>
+        <div class="container col-md-6">
+            <div class="form-group">
+                <label for="">No Surat Keluar</label>
+                <input type="text" class="form-control" id="">
+            </div>
+        </div>
+    </form>
+    
     <div class="col-md-12">
         <div class="pull-right">
             <button type="submit" class="btn btn-danger btn-flat">Cencel</button>
-            <button type="submit" class="btn btn-primary btn-flat">Submit</button>
+            <button type="submit" class="btn btn-primary btn-flat">Simpan</button>
 
         </div>
     </div>
@@ -38,7 +77,6 @@
 
     <div class="col-md-12">
 
-        <div class="c_panel">
 
             <div class="c_title">
                 <h2>Editable Table</h2>
@@ -107,31 +145,33 @@
                             <table class="table table-hover dataTable table table-striped table-bordered no-footer"
                                 id="table-editable" role="grid" aria-describedby="table-editable_info">
                                 <thead>
-                                    <tr role="row">
-                                        <th class="sorting_asc" tabindex="0" aria-controls="table-editable" rowspan="1"
-                                            colspan="1" aria-sort="ascending"
-                                            aria-label="First Name: activate to sort column descending"
-                                            style="width: 342px;">First Name</th>
-                                        <th class="sorting" tabindex="0" aria-controls="table-editable" rowspan="1"
-                                            colspan="1" aria-label="Last Name: activate to sort column ascending"
-                                            style="width: 336px;">Last Name</th>
-                                        <th class="sorting" tabindex="0" aria-controls="table-editable" rowspan="1"
-                                            colspan="1" aria-label="Points: activate to sort column ascending"
-                                            style="width: 237px;">Points</th>
-                                        <th class="sorting" tabindex="0" aria-controls="table-editable" rowspan="1"
-                                            colspan="1" aria-label="Status: activate to sort column ascending"
-                                            style="width: 307px;">Status</th>
-                                        <th class="text-center sorting" style="width: 149px; text-align: center;"
-                                            tabindex="0" aria-controls="table-editable" rowspan="1" colspan="1"
-                                            aria-label="Action: activate to sort column ascending">Action</th>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Tgl Masuk</th>
+                                        <th>Tgl Penyelesaian</th>
+                                        <th>No.Surat</th>
+                                        <th>Register</th>
+                                        <th>Tgl Surat</th>
+                                        <th>Asal Surat</th>
+                                        <th>Disposisi</th>
+                                        <th>Keterangan</th>
+                                        <th>Prihal</th>
+                                        <th>No.Surat Keluar</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr role="row" class="odd">
-                                        <td class="sorting_1"><input type="text" class="form-control small"
-                                                value="Addams"></td>
-                                        <td><input type="text" class="form-control small" value="Kim"></td>
-                                        <td><input type="text" class="form-control small" value="435"></td>
+                                        <td>435</td>
+                                        <td>435</td>
+                                        <td>435</td>
+                                        <td>435</td>
+                                        <td>435</td>
+                                        <td>435</td>
+                                        <td>435</td>
+                                        <td>435</td>
+                                        <td>435</td>
+                                        <td>435</td>
                                         <td><input type="text" class="form-control small" value="super Admin"></td>
                                         <td class="text-center">
                                             <div class="text-center"><button type="button"
@@ -145,103 +185,14 @@
                                         <td class="sorting_1">Aishmen</td>
                                         <td>Samuel</td>
                                         <td>435</td>
+                                        <td>435</td>
+                                        <td>435</td>
+                                        <td>435</td>
+                                        <td>435</td>
+                                        <td>435</td>
+                                        <td>435</td>
+                                        <td>435</td>
                                         <td>super Admin</td>
-                                        <td class="text-center"><a
-                                                class="edit btn btn-sm btn-default btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-pencil-square-o"></i></a> <a
-                                                class="delete btn btn-sm btn-danger btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr role="row" class="odd">
-                                        <td class="sorting_1">Aster</td>
-                                        <td>Fred</td>
-                                        <td>567</td>
-                                        <td class="center">nothing</td>
-                                        <td class="text-center"><a
-                                                class="edit btn btn-sm btn-default btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-pencil-square-o"></i></a> <a
-                                                class="delete btn btn-sm btn-danger btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr role="row" class="even">
-                                        <td class="sorting_1">Brown</td>
-                                        <td>Bobby</td>
-                                        <td>545</td>
-                                        <td>super Admin</td>
-                                        <td class="text-center"><a
-                                                class="edit btn btn-sm btn-default btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-pencil-square-o"></i></a> <a
-                                                class="delete btn btn-sm btn-danger btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr role="row" class="odd">
-                                        <td class="sorting_1">Carry</td>
-                                        <td>John</td>
-                                        <td>987</td>
-                                        <td>ipsume dolor</td>
-                                        <td class="text-center"><a
-                                                class="edit btn btn-sm btn-default btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-pencil-square-o"></i></a> <a
-                                                class="delete btn btn-sm btn-danger btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr role="row" class="even">
-                                        <td class="sorting_1">Harris</td>
-                                        <td>Samantha</td>
-                                        <td>567</td>
-                                        <td class="center">nothing</td>
-                                        <td class="text-center"><a
-                                                class="edit btn btn-sm btn-default btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-pencil-square-o"></i></a> <a
-                                                class="delete btn btn-sm btn-danger btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr role="row" class="odd">
-                                        <td class="sorting_1">Johnson</td>
-                                        <td>Alexa</td>
-                                        <td>220</td>
-                                        <td>super Admin</td>
-                                        <td class="text-center"><a
-                                                class="edit btn btn-sm btn-default btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-pencil-square-o"></i></a> <a
-                                                class="delete btn btn-sm btn-danger btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr role="row" class="even">
-                                        <td class="sorting_1">Miller</td>
-                                        <td>James</td>
-                                        <td>525</td>
-                                        <td>ipsume dolor</td>
-                                        <td class="text-center"><a
-                                                class="edit btn btn-sm btn-default btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-pencil-square-o"></i></a> <a
-                                                class="delete btn btn-sm btn-danger btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr role="row" class="odd">
-                                        <td class="sorting_1">Morris</td>
-                                        <td>Heather</td>
-                                        <td>987</td>
-                                        <td>ipsume dolor</td>
-                                        <td class="text-center"><a
-                                                class="edit btn btn-sm btn-default btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-pencil-square-o"></i></a> <a
-                                                class="delete btn btn-sm btn-danger btn-raised rippler rippler-inverse"
-                                                href="javascript:;"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr role="row" class="even">
-                                        <td class="sorting_1">Paul</td>
-                                        <td>Billy</td>
-                                        <td>567</td>
-                                        <td class="center">nothing</td>
                                         <td class="text-center"><a
                                                 class="edit btn btn-sm btn-default btn-raised rippler rippler-inverse"
                                                 href="javascript:;"><i class="fa fa-pencil-square-o"></i></a> <a
@@ -279,7 +230,6 @@
             </div>
             <!--/.c_content-->
 
-        </div>
         <!--/.c_panels-->
 
     </div>
